@@ -1,0 +1,94 @@
+.studentTopBar {
+    padding: 20px;
+    background-color: #f5f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftStudentTopBar {
+    display: flex;
+    align-items: center;
+}
+
+.addPlus {
+    background: #3D68FF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    margin-right: 15px;
+    padding: 10px 15px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: #EDF1FF;
+}
+
+.addPlus img {
+    margin-right: 5px;
+}
+
+.import {
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    padding: 10px 15px;
+    border: 1px solid #3D68FF;
+    color: #3D68FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+}
+
+.rightStudenttopBar {
+    display: flex;
+    align-items: center;
+}
+
+.rightStudenttopBar select {
+    padding: 10px 15px;
+    width: 180px;
+    margin-left: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+    border: none;
+    outline: none;
+
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+
+    /* Text color main */
+
+    color: #313649;
+}
+
+.rightStudenttopBar div {
+    position: relative;
+
+}
+
+.iconDown {
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}

@@ -1,103 +1,102 @@
-import "./sidebar.css";
-import {
-  LineStyle,
-  Timeline,
-  TrendingUp,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
-  BarChart,
-  MailOutline,
-  DynamicFeed,
-  ChatBubbleOutline,
-  WorkOutline,
-  Report,
-} from "@material-ui/icons";
-import { Link } from "react-router-dom";
+import './sidebar.css'
+import menu from '../../assets/icons/menu.svg'
+import DataUsageIcon from '@material-ui/icons/DataUsage'
+import CreditCardIcon from '@material-ui/icons/CreditCard'
+import CropFreeIcon from '@material-ui/icons/CropFree'
+import SchoolIcon from '@material-ui/icons/School'
+import PeopleIcon from '@material-ui/icons/People'
+import AccountBalanceIcon from '@material-ui/icons/AccountBalance'
+import BusinessCenterOutlinedIcon from '@material-ui/icons/BusinessCenterOutlined'
+import LineWeightOutlinedIcon from '@material-ui/icons/LineWeightOutlined'
+import SettingsOutlinedIcon from '@material-ui/icons/SettingsOutlined'
+import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined'
+import { Link } from 'react-router-dom'
 
 export default function Sidebar() {
   return (
     <div className="sidebar">
+      <div className="sideBarTop">
+        <div className="sideBarLogo"></div>
+        <img src={menu} alt="" />
+      </div>
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <Link to="/" className="link">
-            <li className="sidebarListItem active">
-              <LineStyle className="sidebarIcon" />
-              Home
-            </li>
-            </Link>
-            <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
-            </li>
-            <li className="sidebarListItem">
-              <TrendingUp className="sidebarIcon" />
-              Sales
-            </li>
-          </ul>
-        </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Quick Menu</h3>
-          <ul className="sidebarList">
-            <Link to="/users" className="link">
-              <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
-                Users
-              </li>
-            </Link>
-            <Link to="/products" className="link">
-              <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
-                Products
+              <li className="sidebarListItem active">
+                <div>
+                  <DataUsageIcon className="sidebarIcon" />
+                  Analytics
+                </div>
               </li>
             </Link>
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
+              <div>
+                <CreditCardIcon className="sidebarIcon" />
+                Orders
+              </div>
+              <ExpandMoreOutlinedIcon />
             </li>
             <li className="sidebarListItem">
-              <BarChart className="sidebarIcon" />
-              Reports
-            </li>
-          </ul>
-        </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Notifications</h3>
-          <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <MailOutline className="sidebarIcon" />
-              Mail
+              <div>
+                <CropFreeIcon className="sidebarIcon" />
+                QR Code
+              </div>
             </li>
             <li className="sidebarListItem">
-              <DynamicFeed className="sidebarIcon" />
-              Feedback
+              <div>
+                <CreditCardIcon className="sidebarIcon" />
+                Shifts
+              </div>
             </li>
             <li className="sidebarListItem">
-              <ChatBubbleOutline className="sidebarIcon" />
-              Messages
-            </li>
-          </ul>
-        </div>
-        <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Staff</h3>
-          <ul className="sidebarList">
-            <li className="sidebarListItem">
-              <WorkOutline className="sidebarIcon" />
-              Manage
+              <div>
+                <SchoolIcon className="sidebarIcon" />
+                Students
+              </div>
+
+              <ExpandMoreOutlinedIcon />
             </li>
             <li className="sidebarListItem">
-              <Timeline className="sidebarIcon" />
-              Analytics
+              <div>
+                <PeopleIcon className="sidebarIcon" />
+                Group
+              </div>
+
+              <ExpandMoreOutlinedIcon />
             </li>
             <li className="sidebarListItem">
-              <Report className="sidebarIcon" />
-              Reports
+              <div>
+                <AccountBalanceIcon className="sidebarIcon" />
+                Courses
+              </div>
+
+              <ExpandMoreOutlinedIcon />
+            </li>
+            <li className="sidebarListItem">
+              <div>
+                <BusinessCenterOutlinedIcon className="sidebarIcon" />
+                HR
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div>
+                <LineWeightOutlinedIcon className="sidebarIcon" />
+                News
+              </div>
+
+              <ExpandMoreOutlinedIcon />
+            </li>
+            <li className="sidebarListItem">
+              <div>
+                <SettingsOutlinedIcon className="sidebarIcon" />
+                Settings
+              </div>
+              <ExpandMoreOutlinedIcon />
             </li>
           </ul>
         </div>
       </div>
     </div>
-  );
+  )
 }

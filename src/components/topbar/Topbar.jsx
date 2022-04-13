@@ -1,27 +1,25 @@
 import React from "react";
+import avatar from '../../assets/images/avatar.png'
+import lock from '../../assets/icons/lock.svg'
+import login from '../../assets/icons/login.svg'
 import "./topbar.css";
-import { NotificationsNone, Language, Settings } from "@material-ui/icons";
+import ExpandMoreOutlinedIcon from '@material-ui/icons/ExpandMoreOutlined'
 
 export default function Topbar() {
   return (
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo">Admin</span>
+          <span className="logo">Students list</span>
         </div>
         <div className="topRight">
           <div className="topbarIconContainer">
-            <NotificationsNone />
-            <span className="topIconBadge">2</span>
+            <img src={avatar} alt='' />
+            Avaz Tulovov
+            <ExpandMoreOutlinedIcon  className="iconDownAvatar"/>
           </div>
-          <div className="topbarIconContainer">
-            <Language />
-            <span className="topIconBadge">2</span>
-          </div>
-          <div className="topbarIconContainer">
-            <Settings />
-          </div>
-          <img src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="" className="topAvatar" />
+          <img className="lockIcon" src={lock} alt="" />
+          <img src={login} alt="" />
         </div>
       </div>
     </div>
